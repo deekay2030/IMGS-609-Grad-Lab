@@ -243,10 +243,6 @@ view5.set_display_mode('overlay')
 view5.class_alpha = 0.3
 
 
-# ## Viewing Spectra
-
-# In[ ]:
-
 
 
 
