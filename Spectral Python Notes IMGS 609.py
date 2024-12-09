@@ -243,6 +243,24 @@ view5.set_display_mode('overlay')
 view5.class_alpha = 0.3
 
 
+# ## Viewing Spectra
+
+# Option 1
+pixel_x, pixel_y = 100, 150 
+pixel_spectra = img[pixel_y, pixel_x]
+
+plt.plot(img.bands.centers, pixel_spectra)
+plt.xlabel('Wavelength')
+plt.ylabel('Reflectance')
+plt.title('Pixel Spectra')
+plt.show()
 
 
+# option 2
+wavelengths = img.bands.centers  # Get wavelength information from the image
+plt.plot(wavelengths, pixel_spectra)
+plt.xlabel('Wavelength')
+plt.ylabel('Reflectance')
+plt.title('Pixel Spectra')
+plt.show()
 
